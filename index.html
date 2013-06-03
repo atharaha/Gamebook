@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!doctype html PUBLIC "-//WC3//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+		<title>Gamebook</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript">
+			function reloadtop()
+			{
+				parent.frames['frtop'].location.reload();
+			}
+		</script>
+	</head>
+	<frameset frameborder="0" framespacing="0" border="0" cols="*,850,*">
+		<frame name="bdleft" scrolling="no" noresize target="rtop" src="frborder.htm" />
+		<frameset rows="110,*">
+			<frame name="frtop" src="Top.php" scrolling="no" target="frmain" />
+			<frame name="frmain" src="Main.html" scrolling="auto" target="frmain" onload="reloadtop();" />
+		</frameset>
+		<frame name="bdright" src="Border.html" scrolling="auto" target="rtop" />
+		<noframes>
+			<p>This page uses frames, but your browser doesn't support them.</p>
+		</noframes>
+	</frameset>
+</html>
