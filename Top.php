@@ -30,12 +30,14 @@
 						$result = mysqli_query($link, $sql);
 						
 						echo '<li style="float:right;"><a href="Logout.php">Logout</a></li>';
+						echo '<li style="float:right;"><a href="AccountUpdateForm.php">Update Account</a></li>';
 						echo '<li style="float:right;"><a href="Write.php">Write Stories</a></li>';
 						
 						if(mysqli_num_rows($result) == 1)
 						{
 							echo '<li style="float:right;"><a href="Administrator.php">Administrator</a></li>';
 						}
+						mysqli_close($link);
 					}
 					else
 					{

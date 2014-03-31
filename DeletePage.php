@@ -36,7 +36,6 @@
 						echo "Page Deletion Unsuccessful on ".date("D, d M Y.");
 						echo "<meta http-equiv='refresh' content='5;url=EditStoryForm.php?title=".$title."'>";
 					}
-					unset($_POST);
 					mysqli_close($link);
 				}
 				else

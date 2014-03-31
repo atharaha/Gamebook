@@ -60,8 +60,7 @@
 							echo '<td width="10%"><a href="AdministratorDeleteStory.php?title='.$entry['title'].'&author='.$entry['author'].'">Delete</a></td></tr>'; 
 							$index++;
 						}
-						echo '</table>';
-						mysqli_close($link);		
+						echo '</table>';		
 					}
 				}
 				else
@@ -69,6 +68,7 @@
 					echo "Please Login!";
 					echo "<meta http-equiv='refresh' content='10;url=LoginForm.html'>";
 				}
+				mysqli_close($link);
 			?>
 		</div>
 	</body>

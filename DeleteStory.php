@@ -46,7 +46,6 @@
 						echo "Story Deletion Unsuccessful on ".date("D, d M Y.");
 						echo "<meta http-equiv='refresh' content='10;url=Write.php'>";
 					}
-					unset($_POST);
 					mysqli_close($link);
 				}
 				else

@@ -480,6 +480,7 @@
 					echo "Please Login!";
 					echo "<meta http-equiv='refresh' content='10;url=LoginForm.html'>";
 				}
+				mysqli_close($link);
 			?>
 		</div>
 	</body>

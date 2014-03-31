@@ -16,12 +16,14 @@
 			$link = mysqli_connect($server_host, $server_username, $server_password, $server_database);
 
 			$id = mysqli_real_escape_string($link,$_GET['id']);
+			
 			$sql = "select * from pages where id='$id';";
 			$result = mysqli_query($link, $sql);
+			
 			if (mysqli_num_rows($result) == 0)
-			  {
+			{
 				echo 'Sorry! This page has yet to be created, please come back once the page is released!';
-			   }
+			}
 			else
 			{
 				$end = True;

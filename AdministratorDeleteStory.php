@@ -51,14 +51,13 @@
 						echo "Story Deletion Unsuccessful on ".date("D, d M Y.");
 						echo "<meta http-equiv='refresh' content='10;url=Administrator.php'>";
 					}
-					unset($_POST);
-					mysqli_close($link);
 				}
 				else
 				{
 					echo "Please Login!";
 					echo "<meta http-equiv='refresh' content='10;url=LoginForm.html'>";
 				}
+				mysqli_close($link);
 			?>
 		</div>
 	</body>

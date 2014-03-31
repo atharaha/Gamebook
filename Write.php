@@ -56,9 +56,9 @@
 							echo '<td width="10%"><a href="DeleteStory.php?title='.$entry['title'].'">Delete</a></td></tr>'; 
 							$index++;
 						}
-						echo '</table>';
-						mysqli_close($link);		
+						echo '</table>';	
 					}
+					mysqli_close($link);	
 					echo '<h4 align="center"><a href="CreateStoryForm.php">Create a New Story!</a></h4>'; 
 				}
 				else
