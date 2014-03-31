@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Gamebook | Login</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type = "text/javascript">
+			function validateForm()
+			{
+				var username = document.forms["loginForm"]["username"].value;
+				var password = document.forms["loginForm"]["password"].value;
+				if (username==null || username=="")
+				{
+					alert("Please enter your Username!");
+					return false;
+				}
+				if (password==null || password=="")
+				{
+					alert("Please enter your Password!");
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h2>Login</h2> 
+			<form name="loginForm" action="Login.php" onsubmit="return validateForm()" method="post">
+				<fieldset>
+					<legend>Login Requirements</legend>
+					<table border="0">
+						<tr>
+							<td width="40%"><b>Username : </b></td>
+							<td width="50%"><input type="text" name="username" size="20"></td>
+						</tr>
+						<tr>
+							<td width="40%"><b>Password : </b></td>
+							<td width="50%"><input type="password" name="password" size="20" maxlength="20" /></td>
+						</tr>
+					</table>
+				</fieldset>
+				<p align="center"><input type="submit" value="Submit" /></p>
+			</form>
+			<p><a href="PasswordResetForm.php">Forgot your password?</a>
+			<br />Don't have an account yet? 
+			<a href="RegistrationForm.php">Register with us!</a></p>
+		</div>
+	</body>
+</html>

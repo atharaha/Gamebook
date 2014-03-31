@@ -1,0 +1,24 @@
+body {
+  font-family:Times New Roman;
+  color:#413839; 
+  margin-top:0px; 
+  background-image:url('../images/texture-noise-beige.gif');}
+
+div {
+  width:auto; 
+  padding:20px; 
+  margin-top:10px; margin-right:auto; margin-bottom:1px; margin-left:auto; border-radius:15px;
+  border-style:dotted; border-width:2px;}
+  
+table {width:100%; margin-top:0px;}
+  
+fieldset {
+  font-weight:bold; color:#707070;
+  padding:10px;}
+
+hr {border-style:dashed; border-width:1px;}
+
+/*pseudoclasses*/
+a:link 		{color: #666666}
+a:visited 	{color: #808080}
+a:hover		{color: #FF9900}
